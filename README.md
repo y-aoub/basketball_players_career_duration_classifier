@@ -1,6 +1,7 @@
-# NBA Player Career Duration Prediction Pipeline
+# 5-Year NBA Career Predictor
 
-This folder contains the code for the NBA player career duration prediction pipeline, wrapped in a FastAPI application.
+This folder contains the code and checkpoints of a model that predicts whether a player will remain in the league for the next 5 years. It is built, trained, tested, and wrapped in a FastAPI application for demonstration purposes and for fun! :)
+
 
 ## Setup
 
@@ -29,7 +30,7 @@ After running `model.py`, the model will be saved in pickl format if `clf_name` 
 The same scoring function `score_classifier` given by default in the `test.py` at the beginning is kept to test the model, except we increased the number of Folds for cross-validation from 3 to 5 for better scoring.
 
 
-# NBA Player Career Duration Prediction API
+# FastAPI App
 
 This API predicts the career duration of NBA players using a pre-trained XGBoost model.
 It accepts a JSON containing players' statistics and returns a JSON with predictions of whether the player will continue in the league for the next 5 years or not.
